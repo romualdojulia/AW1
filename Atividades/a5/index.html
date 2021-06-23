@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+
+    <style>
+        input{
+            display:inline-flex;
+        }
+    </style>
+
+</head>
+<body>
+    <form>
+        <fieldset> 
+            <legend>Dados Pessoais: </legend>
+            <label for = "nome">Nome: </label>
+            <input type="text" id = "nome" value="nome" required>
+            <label for = "nome">Sobrenome: </label>
+            <input type="text" id = "nome" value="nome" required>
+
+            <hr>
+            <label for = "sexo">Sexo: </label>
+            <input type="radio" id="M" name="genero" value="M">
+            <label for="M">Masculino</label>
+            <input type="radio" id="F" name="genero" value="F">
+            <label for="F"> Feminino</label>
+            <input type="radio" id="O" name="genero" value="O">
+            <label for="O"> Outro</label><br>   
+            
+            <hr>
+            <label for = "plano">Qual tipo de plano deseja realizar: </label><br>
+            <input list="plano" required>
+            <datalist id="plano">
+                <option value="1 mês">
+                <option value="3 meses">
+                <option value="6 meses">
+                <option value="1 ano">
+            </datalist>
+            
+            <hr>
+            <label for="telefone">Telefone: </label>
+            <input type="tel" class="form-control" id="telefone" name="telefone"
+            placeholder="(99) 9999-9999"
+            pattern="(\([0-9]{2}\))\s([8]{1})?([0-9]{4})-([0-9]{4})"
+            title="Número de telefone precisa ser no formato (99) 999-9999"/><br> 
+
+            <label for="celular">Celular: </label>
+            <input type="cel" class="form-control" id="celular" name="celular"
+            placeholder="(99) 99999-9999"
+            pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{4})-([0-9]{4})"
+            title="Número de telefone precisa ser no formato (99) 9999-9999" required/><br>
+
+            <hr>
+            <label for="idData">Data de Nascimento: </label><br>
+            <input type="date" name="dtNasc" id="idData" min= "1900-01-01" max = "2021-06-23" required ><br>  
+            
+            <hr>
+            <label for="arq">Selecione uma foto de perfil </label>
+            <input type="file" name="arq" id="arq" multiple>
+
+
+
+        </fieldset>
+        
+        <fieldset>
+            <legend>Dados do cadastro: </legend>
+            <label for="email">Digite seu e-mail: </label>
+            <input type="email" name="email" id="email" maxlength="50" autocomplete="off" required><br>
+            <label for="password">Senha: </label>
+            <input type="password" id="senha" name="senha" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Modalidades: </legend>
+            Selecione as modalidades que você deseja praticar: <br>
+            <input type="checkbox" name="musc" id="musc" value="musc">
+            <label for="musc">Musculação</label><br>
+            
+            <input type="checkbox" name="tkd" id="tkd" value="tkd">
+            <label for="tkd">Taekwondo</label><br>
+
+            <input type="checkbox" name="mth" id="mth" value="mth">
+            <label for="mth">Muay Thai</label><br>
+
+            <input type="checkbox" name="capo" id="capo" value="capo">
+            <label for="capo">Capoeira</label><br>
+
+            <input type="checkbox" name="func" id="func" value="func">
+            <label for="func">Treinamento Funcional</label><br>
+
+            <input type="checkbox" name="cros" id="cros" value="cros">
+            <label for="cros">Crossfit</label><br>
+
+            <input type="checkbox" name="zum" id="zum" value="zum">
+            <label for="zum">Zumba</label><br>            
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Outro: </legend>
+           <p>Você possui experiencia com alguma dessas modalidades ou não? Conte para nós!</p>
+            <textarea name="message" rows="10" cols="30">
+            </textarea>
+        </fieldset>
+    
+        <input type="button" onclick = "alert('Cadastro Realizado')" value="Enviar Formulário"><br>
+        <input type="reset" value="Apagar Formulário">
+        
+    </form> 
+    
+</body>
+</html>
