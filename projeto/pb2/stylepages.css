@@ -1,0 +1,138 @@
+/*================ RESET ======================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*=============== HEADER ===============*/
+header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+header p {
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 2.5rem;
+  align-self: center;
+}
+
+header #img1 {
+  width: 40px;
+}
+
+header #img2 {
+  width: 100px;
+}
+
+/*=============== NAV ===============*/
+nav {
+  background-color: #e5dfdf;
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  color: blue;
+}
+
+li {
+  margin: auto;
+  position: relative;
+}
+
+/*============= TÍTULO ===============*/
+
+.titulo,
+h3 {
+  font-family: 'Bowlby One SC', cursive;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.lhis {
+  padding: 5px 0;
+  background: red;
+  margin-left: 15px;
+  margin-right: 1175px;
+  margin-bottom: 5px;
+}
+
+.lky {
+  padding: 5px 0;
+  background: black;
+  margin-left: 15px;
+  margin-right: 875px;
+  margin-bottom: 5px;
+}
+
+.lpo {
+  padding: 5px 0;
+  background: black;
+  margin-left: 15px;
+  margin-right: 900px;
+  margin-bottom: 5px;
+}
+
+.lgrad {
+  padding: 5px 0;
+  background: blue;
+  margin-left: 15px;
+  margin-right: 1105px;
+  margin-bottom: 5px;
+}
+
+/*============== SECTION ================*/
+
+section img {
+  width: 250px;
+}
+
+section p {
+  margin-left: 15px;
+  margin-right: 17px;
+  font-family: 'ABeeZee', sans-serif;
+  text-align: justify;
+}
+
+.container1 {
+  padding: 5px 0;
+  display: flex;
+  margin-left: 15px;
+}
+
+.container2 {
+  padding: 5px 0;
+  display: flex;
+  margin-right: 15px;
+}
+
+/*==================== FOOTER ============================ */
+.imgpf {
+  padding-top: 10px;
+  display: inline;
+  width: 670px;
+}
+
+footer {
+  background-color: black;
+}
+
+footer p {
+  color: white;
+  font-family: 'ABeeZee', sans-serif;
+}

@@ -1,0 +1,158 @@
+/*================ RESET ======================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*=============== HEADER ===============*/
+header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+header p {
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 2.5rem;
+  align-self: center;
+}
+
+header #img1 {
+  width: 40px;
+}
+
+header #img2 {
+  width: 100px;
+}
+
+/*=============== NAV ===============*/
+nav {
+  background-color: #e5dfdf;
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  color: blue;
+}
+
+li {
+  margin: auto;
+  position: relative;
+}
+
+/*=============== SELECIONADORES EM IMAGEM ===============*/
+.imagens {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+
+.imagens img {
+  width: 15.685rem;
+  height: 14.937rem;
+  clip-path: circle();
+}
+
+/*=============== BOTÕES SELECIONADORES ===============*/
+.botoes {
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Boogaloo', cursive;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.botoes a {
+  text-decoration: none;
+  color: white;
+}
+
+.b1 {
+  padding: 12px 28px;
+  background: red;
+}
+
+.b1:hover {
+  transition: 0.1s;
+  background: #ef2c2c;
+  color: black;
+}
+
+.b2 {
+  margin-left: 20px;
+  padding: 12px 28px;
+  background: black;
+}
+
+.b2:hover {
+  transition: 0.1s;
+  background: #b1a8a8;
+  color: black;
+}
+
+.b3 {
+  padding: 12px 28px;
+  background: blue;
+}
+
+.b3:hover {
+  color: black;
+  background: #454ce7;
+}
+
+/*==================== SECTION ============================ */
+.section {
+  display: flex;
+  background: #b1a8a8;
+  justify-content: space-around;
+}
+
+section h2 {
+  font-family: 'Bowlby One SC', cursive;
+}
+
+section img {
+  width: 200px;
+  clip-path: circle();
+}
+
+section pre {
+  margin-top: auto;
+  color: black;
+  font-family: 'Boogaloo', cursive;
+  text-align: center;
+  font-size: 20px;
+}
+
+/*==================== FOOTER ============================ */
+article .imgpf {
+  padding-top: 10px;
+  display: inline;
+  width: 670px;
+}
+
+footer {
+  background-color: black;
+}
+
+footer p {
+  color: white;
+  font-family: 'ABeeZee', sans-serif;
+}
