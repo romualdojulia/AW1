@@ -1,2 +1,2 @@
 # AW1
-# https://romualdojulia.github.io/AW1/Atividades/A10
+Repositório para atividades da disciplina Aplicações para Web 1 - IFSP;
