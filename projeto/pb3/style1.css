@@ -1,0 +1,128 @@
+/* ====================== RESET ===================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  min-height: 854px;
+  background-image: linear-gradient(rgb(190, 34, 34), black);
+  background-size: cover;
+  background-position: center top;
+}
+
+/* ====================== INICIO ===================*/
+.container {
+  text-align: center;
+  padding: 1.25rem;
+}
+
+.page-title {
+  color: #ffffff;
+  margin: 0.32rem 0;
+}
+
+h2 {
+  color: white;
+}
+
+/* ====================== BOTÕES ===================*/
+button,
+.button-jogar {
+  padding: 0.8rem 1.5rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+}
+
+.button-jogar {
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+}
+
+#refresh {
+  margin-top: auto;
+}
+
+/* ====================== CARTAS ===================*/
+#carta-jogador,
+#carta-maquina {
+  width: 360px;
+  height: 500px;
+  overflow: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  background-size: 350px 300px;
+  background-repeat: no-repeat;
+  background-position-x: 5px;
+  background-position-y: 10px;
+  border-radius: 33px;
+}
+
+#carta-jogador h3 {
+  text-align: center;
+}
+
+.carta-status {
+  height: 160px;
+  margin: 2rem;
+  color: white;
+  z-index: 2;
+  text-align: left;
+}
+
+.carta-status input {
+  margin: 20px 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.carta-subtitle {
+  z-index: 2;
+  position: absolute;
+  top: 2rem;
+  left: 2.31rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+#cartas {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.carta-status p {
+  margin-bottom: 2rem;
+}
+
+/*========== RESPONSIVO ==========*/
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    display: inline;
+  }
+}
+
+@media only screen and (min-width: 60px) and (max-width: 768px) {
+  .wrapper {
+    display: inline;
+  }
+}
